@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
+using MyBox;
 using UnityEngine.SceneManagement;
 
 [ExecuteAlways]
@@ -39,6 +40,7 @@ public class PrefabLightmapData : MonoBehaviour
         Init();
     }
 
+    [ButtonMethod]
     void Init()
     {
         if (m_RendererInfo == null || m_RendererInfo.Length == 0)
